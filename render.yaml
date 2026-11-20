@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: darglobal-wasalt-bot
+    runtime: docker
+    plan: free
+    healthCheckPath: /api/health
+    envVars:
+      - key: OPENROUTER_API_KEY
+        sync: false
